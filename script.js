@@ -4,30 +4,28 @@ let facebookCounter = document.getElementById('facebookCounter');
 
 
 function setCounters() {
-let countertw = 0;
-let counteryt = 0;
-let counterfb = 0;
+let counter = 0;
+
 setInterval(() => {
-    countertw = countertw + 100
-   if (countertw < 12100) {
-    twitterCounter.innerHTML=(countertw);
+    counter = counter + 100
+   if (counter < 12100) {
+    twitterCounter.innerHTML=(counter);
    }
    
 }, 10);
 
 setInterval(() => {
-    counteryt = counteryt + 30
-   if (counteryt < 5030) {
-    youtubeCounter.innerHTML=(counteryt);
+    counter = counter + 30
+   if (counter < 5030) {
+    youtubeCounter.innerHTML=(counter);
    }
    
 }, 10);
 
 setInterval(() => {
-    counterfb = counterfb + 50
-   if (counterfb < 7550) {
-    facebookCounter.innerHTML=(counterfb);
-    console.log(counterfb);
+    counter = counter + 50
+   if (counter < 7550) {
+    facebookCounter.innerHTML=(counter);
    }
    
 }, 10);
@@ -35,7 +33,3 @@ setInterval(() => {
 }
 
 setCounters();
-
-
-
-
